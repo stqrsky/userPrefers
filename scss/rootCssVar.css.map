@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,KAAM;EAeJ,YAAY,CAAC,aAAa;EAC1B,OAAO,CAAC,iBAAiB;EACzB,MAAM,CAAC,mBAAmB;EAC1B,WAAW,CAAC,kBAAkB;;AAKhC,SAAU;EACR,YAAY,CAAC,YAAY;EACzB,OAAO,CAAC,aAAa;EACrB,MAAM,CAAC,kBAAkB;EACzB,WAAW,CAAC,iBAAiB",
+"sources": ["rootCssVar.scss"],
+"names": [],
+"file": "rootCssVar.css"
+}

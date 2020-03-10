@@ -1,0 +1,54 @@
+// Do not forget to update getting-started/theming.md!
+:root {
+
+  // Custom variable values only support SassScript inside `#{}`.
+  /*
+BREAKPOINTS
+  */
+  @each $bp, $value in $grid-breakpoints {
+    --breakpoint-#{$bp}: #{$value};
+  }
+
+  // Use `inspect` for lists so that quoted items keep the quotes.
+  // See https://github.com/sass/sass/issues/2383#issuecomment-336349172
+  // --font-family-sans-serif: #{inspect($font-family-sans-serif)};
+  // --font-family-monospace: #{inspect($font-family-monospace)};
+
+  /*
+  ROOT COLOR
+  */
+  @each $color, $value in $colors {
+    --#{$color}: #{$value};
+  }
+
+  @each $color, $value in $theme-colors {
+    --#{$color}: #{$value};
+  }
+
+
+  //translate scss vars 2 root
+  //--dark: $dark;
+  //--darkcolor: $darkcolor;
+  //--light: $light;
+  //--lightaccent: $lightaccent;
+  //--darkaccent: $darkaccent;
+//
+  //--lighthover: $lighthover;
+  //--darkhover: $darkhover;
+
+
+  // assigning root light theme
+  --background: var(--light);
+  --color: var(--darkcolor);
+  --linkcolor: var(--lightaccent);
+  --linkhover: var(--lighthover);
+}
+
+// assigning dark theme using css vars
+
+.DarkMode {
+  --background: var(--dark);
+  --color: var(--light);
+  --linkcolor: var(--darkaccent);
+  --linkhover: var(--darkhover);
+}

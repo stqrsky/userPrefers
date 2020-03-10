@@ -1,0 +1,137 @@
+// Color system
+
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$grays: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$grays: map-merge(
+                (
+                        "100": $gray-100,
+                        "200": $gray-200,
+                        "300": $gray-300,
+                        "400": $gray-400,
+                        "500": $gray-500,
+                        "600": $gray-600,
+                        "700": $gray-700,
+                        "800": $gray-800,
+                        "900": $gray-900
+                ),
+                $grays
+);
+
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: map-merge(
+                (
+                        "blue":       $blue,
+                        "indigo":     $indigo,
+                        "purple":     $purple,
+                        "pink":       $pink,
+                        "red":        $red,
+                        "orange":     $orange,
+                        "yellow":     $yellow,
+                        "green":      $green,
+                        "teal":       $teal,
+                        "cyan":       $cyan,
+                        "white":      $white,
+                        "gray":       $gray-600,
+                        "gray-dark":  $gray-800
+                ),
+                $colors
+);
+
+$lead:       $blue !default;
+$support:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+
+
+$dark: rgba(26,26,26,1);
+
+$darkcolor: rgb(214, 214, 214);
+$darkhover: rgb(255, 0, 197);
+$darkaccent: rgb(247, 226, 255);
+
+$lightcolor: rgb(0, 0, 0);
+$lightaccent: rgb(123, 0, 17);
+$lighthover: rgba(355,0,0,1);
+
+
+
+$theme-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+                (
+                        "lead": $lead,
+                        "support": $support,
+
+                        "success":    $success,
+                        "info":       $info,
+                        "warning":    $warning,
+                        "danger":     $danger,
+
+                        "lightcolor":  $lightcolor,
+                        "lightaccent": $lightaccent,
+                        "lighthover":   $lighthover,
+
+
+                        "dark":       $dark,
+                        "darkcolor": $darkcolor,
+                        "darkaccent": $darkaccent,
+                        "darkhover": $darkhover
+                ),
+                $theme-colors
+);
+
+// Set a specific jump point for requesting color jumps
+$theme-color-interval:      8% !default;
+
+// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
+$yiq-contrasted-threshold:  150 !default;
+
+// Customize the light and dark text colors for use in our YIQ color contrast function.
+$yiq-text-dark:             $gray-900 !default;
+$yiq-text-light:            $white !default;
+
+// Characters which are escaped by the escape-svg function
+$escaped-characters: (
+                ("<","%3c"),
+                (">","%3e"),
+                ("#","%23"),
+) !default;
+
+
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px
+) !default;
+
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");

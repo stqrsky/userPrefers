@@ -1,0 +1,29 @@
+form {
+  font-size: 14px; }
+  form input[type="text"] {
+    display: block;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: black;
+    width: 210px;
+    height: auto;
+    color: whitesmoke;
+    border-style: none; }
+  form #livesearch {
+    width: 210px;
+    padding: 5px;
+    border-style: none;
+    text-underline: none; }
+    form #livesearch:hover {
+      border-style: none;
+      background-color: black;
+      transition: ease-in-out, background-color, 3s, 1s; }
+
+a {
+  text-decoration: none;
+  color: fuchsia; }
+  a:hover {
+    color: whitesmoke;
+    transition: ease-in-out, color, 1.5s, 0.5s; }
+
+/*# sourceMappingURL=searchforms.css.map */

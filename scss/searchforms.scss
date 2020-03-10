@@ -1,0 +1,43 @@
+$transition-short: ease-in-out, color, 1.5s, 0.5s;
+$transition-long: ease-in-out, background-color, 3s, 1s;
+
+form {
+
+  font-size: 14px;
+
+  input[type="text"] {
+    display: block;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: black;
+    width: 210px;
+    height: auto;
+    color: whitesmoke;
+    border-style: none;
+  }
+
+  #livesearch {
+    width: 210px;
+    padding: 5px;
+    border-style: none;
+    text-underline: none;
+
+    &:hover {
+      border-style: none;
+      background-color: black;
+      transition: $transition-long;
+    }
+  }
+
+}
+
+
+
+a {
+  text-decoration: none;
+  color: fuchsia;
+  &:hover {
+    color: whitesmoke;
+    transition: $transition-short;
+  }
+}

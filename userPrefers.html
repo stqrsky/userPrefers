@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intuitive Design</title>
+    <link rel="stylesheet" href="scss/userPrefers.css"/>
+</head>
+<body>
+
+
+<h1>Around 80% of users prefering dark mode</h1>
+<small>According to blog.discord</small>
+<div class="darkmoodeToggle">
+    ACTUAL USER PREFERS DARK MODE?
+    <input type="checkbox">
+</div>
+<p>When it comes to innovative UX/UI the UX-Persona group of "gamer" commonly count to the "early adopters" of new techniques and styles. An DarkMode UI is probably one of the widely spreaded example for this
+    thesis and at least since windows and macOs are providing an darkmode option able to choose for the user as root, the theme mode enjoys great popularity among all classes of UX-Persona
+    <a id="readmore" href="https://blog.discordapp.com/light-theme-redeemed-c541b7ab13e9" target="_blank">read more</a></p>
+
+<ul class="list">
+    <h3>IN ORDER TO DETECT AND TOGGLE USERS PREFERENCES BY OS ROOT WE WILL: </h3>
+    <li><b>1.</b> detect the selected color-scheme for root OS by using the <a href="https://drafts.csswg.org/mediaqueries-5/#descdef-media-prefers-color-scheme" target="_blank"> "prefers-color-scheme"</a>
+        level5 CSS3 media-querie
+    </li>
+    <li><b>2.</b> add a custom css :root class ".darkmode" using the JAVASCRIPT method <a href="" target="_blank"> window.matchMedia("(prefers-color-scheme: dark)").matches </a> to fire whenever our
+        media-querie detects the color-scheme: dark
+    </li>
+    <small>
+        <li><b>Note:</b> It lays on the hand that we we'll setup the "light color scheme" as css :root basic in order to make described process work
+        </li>
+    </small>
+</ul>
+
+
+<script src="js/userPrefers.js"></script>
+
+</body>
+</html>

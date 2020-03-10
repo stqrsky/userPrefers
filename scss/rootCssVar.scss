@@ -1,0 +1,29 @@
+:root {
+
+
+  //translate scss vars 2 root
+ //--dark: $dark;
+ //--darkcolor: $darkcolor;
+ //--light: $light;
+ //--lightaccent: $lightaccent;
+ //--darkaccent: $darkaccent;
+
+ //--lighthover: $lighthover;
+ //--darkhover: $darkhover;
+
+
+  // assigning root light theme
+  --background: var(--light);
+  --color: var(--lightcolor);
+  --link: var(--lightaccent);
+  --linkhover: var(--lighthover);
+}
+
+// assigning dark theme using css vars
+
+.DarkMode {
+  --background: var(--dark);
+  --color: var(--darkcolor);
+  --link: var(--darkaccent);
+  --linkhover: var(--darkhover);
+}
