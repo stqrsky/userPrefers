@@ -75,6 +75,7 @@ $darkcolor: rgb(214, 214, 214);
 $darkhover: rgb(255, 0, 197);
 $darkaccent: rgb(247, 226, 255);
 
+$light: rgb(247, 247, 247);
 $lightcolor: rgb(0, 0, 0);
 $lightaccent: rgb(123, 0, 17);
 $lighthover: rgba(355,0,0,1);
@@ -93,6 +94,7 @@ $theme-colors: map-merge(
                         "warning":    $warning,
                         "danger":     $danger,
 
+                        "light":  $light,
                         "lightcolor":  $lightcolor,
                         "lightaccent": $lightaccent,
                         "lighthover":   $lighthover,
