@@ -1,9 +1,3 @@
-@import "variables";
-// @import "root";
-
-//@import "../../../min";
-
-
 
 html {
   // root variables
@@ -17,6 +11,7 @@ html {
   flex-direction: column;
   justify-content: center;
   height: 100%;
+
 }
 
 body {
@@ -49,9 +44,13 @@ ul.list {
   }
 
   small {
+    color: var(--support);
+    font-size: 10px;
+    letter-spacing: 2px;
     font-style: italic;
     padding: 0;
     margin: 0;
+
   }
 }
 
@@ -69,17 +68,23 @@ p {
 
 
 a {
-  color: var(--link);
+  color: var(--linkcolor);
   text-decoration: none;
-
   &:hover {
     color: var(--linkhover);
-    font-weight: bold;
-    transition: font-weight, 1.3s, ease-in-out;
   }
+}
 
+a{
+  color: var(--linkcolor);
+
+  &:hover{
+    color: var(--linkhover);
+  }
 }
 
 .darkmoodeToggle{
   margin: 1rem 0;
 }
+
+
